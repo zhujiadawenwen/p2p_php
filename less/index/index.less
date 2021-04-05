@@ -1,0 +1,55 @@
+@colorWite:rgb(167, 157, 157);
+@colorBlue:#00a8ff;
+.navbar{
+    margin-bottom: 0;
+}
+.navbar-inverse {
+    .navbar-brand{
+        text-align: center;
+        font-style: italic;
+      
+        i{
+            font-size: 22px;
+            padding-right: 6px;
+        }
+    }
+    .navbar-nav {             
+        &>li{
+            &>a{
+                color: rgb(219, 121, 22);
+                &:hover{
+                    color: @colorBlue;
+                }
+            }
+        } 
+    } 
+}
+.navbar-default .navbar-nav > li > a{
+    line-height: 40px;
+    font-size: 16px;
+    text-align: center;
+    &:hover{
+        background: rgb(233, 226, 226);
+        color: @colorBlue;
+    }
+}
+.tooltip img{
+    height: 100px;
+}
+ #featrue{
+     .row{
+         &>div{
+             background: url('../../../images/feature01.png') no-repeat left center;
+             background-position: left center; 
+             padding-left: 80px;
+         }
+        &>div:nth-of-type(2){
+            background: url('../../../images/feature02.png') no-repeat;
+            background-position: left center; 
+        }
+        &>div:nth-of-type(3){
+            background: url('../../../images/feature03.png') no-repeat;
+            background-position: left center; 
+        }
+     }
+ }
